@@ -50,6 +50,8 @@
 
 .pokedex__listPages li {
   padding: 10px 12px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   background-color: red;
   cursor: pointer;
   color: white;
