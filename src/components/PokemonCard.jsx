@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import "./styles/PokemonCard.css"
 
 const PokemonCard = ({ pokemon }) => {
-  const [dataPokemon, setDataPokemon] = useState()
+  const [dataPokemon, setDataPokemon] = useState();
 
   const navigate = useNavigate()
 
@@ -41,6 +41,20 @@ const PokemonCard = ({ pokemon }) => {
             ))
           }
         </section>
+      </section>
+      <section className='loader'>
+        <div className={`loader__section up ${dataPokemon ? "animationActive" : ""}`}>
+          <div className='loader__black up'>
+            <div className='loader__circle'>
+              <div className='loader__circle-int'></div>
+            </div>
+          </div>
+        </div>
+        <div className={`loader__section down ${dataPokemon ? "animationActive" : ""}`}>
+          <div className='loader__black down'>
+
+          </div>
+        </div>
       </section>
     </article>
   )
